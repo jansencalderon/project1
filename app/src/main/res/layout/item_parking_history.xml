@@ -22,6 +22,7 @@
                 android:id="@+id/imageView"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
+                android:tint="@color/colorAccent"
                 android:src="@drawable/ic_parking"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintStart_toStartOf="parent"

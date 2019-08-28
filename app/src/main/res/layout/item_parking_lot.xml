@@ -16,7 +16,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="8dp"
             android:src="@drawable/ic_parking"
-            android:tint="@color/colorPrimary"
+            android:tint="@color/colorAccent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
