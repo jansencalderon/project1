@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="CLEAR FILTER"
+          app:showAsAction="always"
+          android:visible="false"
+          android:id="@+id/action_clear"
+    />
+    <item android:title="@string/filter"
+        app:showAsAction="always"
+        android:id="@+id/action_filter"
+        android:icon="@drawable/ic_date_range_black_24dp"
+        />
+</menu>
