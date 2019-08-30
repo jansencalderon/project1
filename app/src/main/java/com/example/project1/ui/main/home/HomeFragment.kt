@@ -26,6 +26,7 @@ import com.google.android.gms.maps.model.LatLngBounds
 import com.google.android.gms.maps.model.MarkerOptions
 import com.mancj.materialsearchbar.MaterialSearchBar
 import com.mancj.materialsearchbar.MaterialSearchBar.OnSearchActionListener
+import io.reactivex.Observable
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 
 
@@ -166,6 +167,7 @@ class HomeFragment : Fragment(), OnMapReadyCallback, GoogleMap.OnMapLoadedCallba
                 googleMap?.moveCamera(CameraUpdateFactory.newLatLngBounds(builder.build(), 240))
             }
         }
+
     }
 
 

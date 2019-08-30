@@ -1,78 +1,80 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+        xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="@dimen/small_margin"
-        android:layout_marginTop="@dimen/small_margin"
-        android:layout_marginEnd="@dimen/small_margin"
-        app:cardCornerRadius="4dp"
-        app:cardElevation="0dp">
-
-        <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:elevation="0dp"
-            android:orientation="vertical"
-            android:padding="@dimen/small_margin">
+            android:layout_marginStart="@dimen/small_margin"
+            android:layout_marginTop="@dimen/small_margin"
+            android:foreground="?selectableItemBackground"
+            android:layout_marginEnd="@dimen/small_margin"
+            app:cardCornerRadius="4dp"
+            app:cardElevation="0dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="0dp"
+                android:orientation="vertical"
+                android:padding="@dimen/small_margin">
 
             <ImageView
-                android:id="@+id/imageView"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:tint="@color/colorAccent"
-                android:src="@drawable/ic_parking"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/imageView"
+                    android:layout_width="36dp"
+                    android:layout_height="36dp"
+                    android:tint="@color/colorAccent"
+                    android:src="@drawable/ic_parking"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
-                android:id="@+id/itemName"
-                style="@style/AppTheme.TransactionsTitle"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="@dimen/standard_margin"
-                app:layout_constraintBottom_toTopOf="@+id/itemDate"
-                app:layout_constraintStart_toEndOf="@id/imageView"
-                app:layout_constraintTop_toTopOf="parent" />
+                    android:id="@+id/itemName"
+                    style="@style/AppTheme.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:layout_marginStart="@dimen/standard_margin"
+                    app:layout_constraintBottom_toTopOf="@+id/itemDate"
+                    app:layout_constraintStart_toEndOf="@id/imageView"
+                    app:layout_constraintTop_toTopOf="parent"/>
 
             <TextView
-                android:id="@+id/itemDate"
-                style="@style/AppTheme.TransactionsContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toTopOf="@+id/itemLevel"
-                app:layout_constraintStart_toStartOf="@+id/itemName"
-                app:layout_constraintTop_toBottomOf="@+id/itemName" />
+                    android:id="@+id/itemDate"
+                    style="@style/AppTheme.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toTopOf="@+id/itemLevel"
+                    app:layout_constraintStart_toStartOf="@+id/itemName"
+                    app:layout_constraintTop_toBottomOf="@+id/itemName"/>
 
             <TextView
-                android:id="@+id/itemLevel"
-                style="@style/AppTheme.TransactionsContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintStart_toStartOf="@+id/itemDate"
-                app:layout_constraintTop_toBottomOf="@+id/itemDate" />
+                    android:id="@+id/itemLevel"
+                    style="@style/AppTheme.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="@+id/itemDate"
+                    app:layout_constraintTop_toBottomOf="@+id/itemDate"/>
 
             <TextView
-                android:id="@+id/itemCharge"
-                style="@style/AppTheme.TransactionsContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="200 PHP"
-                app:layout_constraintBottom_toTopOf="@+id/itemDuration"
-                app:layout_constraintEnd_toEndOf="parent" />
+                    android:id="@+id/itemCharge"
+                    style="@style/AppTheme.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="200 PHP"
+                    app:layout_constraintBottom_toTopOf="@+id/itemDuration"
+                    app:layout_constraintEnd_toEndOf="parent"/>
 
             <TextView
-                android:id="@+id/itemDuration"
-                style="@style/AppTheme.TransactionsContent"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2 hours"
-                app:layout_constraintBottom_toBottomOf="parent"
-                app:layout_constraintEnd_toEndOf="parent" />
+                    android:id="@+id/itemDuration"
+                    style="@style/AppTheme.Content"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="2 hours"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
         </androidx.constraintlayout.widget.ConstraintLayout>
     </androidx.cardview.widget.CardView>
 </layout>

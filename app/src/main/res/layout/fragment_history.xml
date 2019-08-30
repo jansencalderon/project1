@@ -6,6 +6,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/colorSolidWhite"
         tools:context=".ui.main.history.HistoryFragment">
 
         <androidx.appcompat.widget.Toolbar
@@ -16,7 +17,7 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:subtitleTextColor="@color/colorLightGray"
-            app:titleTextColor="@color/colorSolidGray" />
+            app:titleTextAppearance="@style/AppTheme.ToolbarTitle" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/recycler_view"
@@ -30,10 +31,10 @@
 
         <include
             android:id="@+id/no_result"
-            android:visibility="gone"
+            layout="@layout/no_result"
             android:animateLayoutChanges="true"
+            android:visibility="gone"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/toolbar"
-            layout="@layout/no_result"/>
+            app:layout_constraintTop_toBottomOf="@+id/toolbar" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
